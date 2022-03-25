@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            /*8 - Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno, calcule e imprima a média (simples) desse aluno. 
+            Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota.
+            Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. */
+
+            var avaliacao1 = parseFloat(prompt("Informe a nota da primeira avaliação."));
+            var avaliacao2 = parseFloat(prompt("Informe a nota da segunda avaliação."));
+
+            while(avaliacao1 < 0 || avaliacao1 > 10){
+                avaliacao1 = parseFloat(prompt("Informe uma nota maior que zero e menor que 10."));
+            }
+
+            while(avaliacao2 < 0 || avaliacao2 > 10){
+                avaliacao2 = parseFloat(prompt("Informe uma nota maior que zero e menor que 10."));
+            }
+
+            var media = (avaliacao1 + avaliacao2) / 2;
+            alert(media)
+        </script>
+    </head>
+</html>

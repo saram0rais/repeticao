@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            /*1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for ZERO, deve ser lido um novo valor, ou seja, para o segundo
+             valor não pode ser aceito o valor zero nem negativo e imprimir o resultado da divisão do primeiro valor lido pelo segundo valor lido.*/
+
+             var valor1 = parseInt(prompt("Informe um número."));
+             var valor2 = parseInt(prompt("Informe outro número."));
+             var divisao;
+            
+             while(valor2 <= 0){
+                valor2 = parseInt(prompt("Insira outro valor."))
+             }
+             divisao = valor1 / valor2;
+             alert(divisao);
+            
+        </script>
+    </head>
+</html>

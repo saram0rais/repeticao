@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            /*13 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.*/
+            var numero = parseInt(prompt("Ate qual tabuada voce deseja ir?"));
+            var tabuada = 1;
+
+            while(tabuada <= numero){
+                document.write("Tabuada do " + tabuada + "<br>")
+
+                var contagem = 1
+
+                while(contagem <= 10){
+                    document.write(tabuada + "x" + contagem + "=" + contagem * tabuada + "<br>")
+                    contagem++
+                }
+                tabuada++
+            }
+        </script>
+    </head>
+</html>
